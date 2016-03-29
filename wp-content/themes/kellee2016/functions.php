@@ -129,6 +129,19 @@ function _kellee_scripts() {
 add_action( 'wp_enqueue_scripts', '_kellee_scripts' );
 
 /**
+ * CMB2 plugin
+ */
+if ( file_exists( get_template_directory() . '/cmb2/init.php' ) ) {
+	require get_template_directory() . '/cmb2/init.php';
+}
+
+/**
+ * Custom metaboxes
+ */
+require get_template_directory() . '/inc/cmb2-metaboxes.php';
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
