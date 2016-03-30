@@ -140,6 +140,10 @@ if ( file_exists( get_template_directory() . '/cmb2/init.php' ) ) {
  */
 require get_template_directory() . '/inc/cmb2-metaboxes.php';
 
+/**
+ * Implement the Custom Data.
+ */
+require get_template_directory() . '/inc/custom-data.php';
 
 /**
  * Implement the Custom Header feature.

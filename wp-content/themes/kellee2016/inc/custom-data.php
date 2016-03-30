@@ -102,36 +102,36 @@ class kellee_Admin {
 	public function custom_post_types() {
 		// Set up custom post types
 		
-		// FAQ Topic post type
-		$faqs_labels = array(
-			'add_new'            => _x( 'Add New', 'faq', 'ps' ),
-			'add_new_item'       => __( 'Add New FAQ Topic', 'ps' ),
-			'all_items'          => __( 'All FAQ Topics', 'ps' ),
-			'edit_item'          => __( 'Edit FAQ Topic', 'ps' ),
-			'menu_name'          => _x( 'FAQ Topics', 'admin menu', 'ps' ),
-			'name_admin_bar'     => _x( 'FAQ Topic', 'add new on admin bar', 'ps' ),
-			'name'               => _x( 'FAQ Topics', 'post type general name', 'ps' ),
-			'new_item'           => __( 'New FAQ Topic', 'ps' ),
-			'not_found'          => __( 'No FAQ Topics found.', 'ps' ),
-			'not_found_in_trash' => __( 'No FAQ Topics found in Trash.', 'ps' ),
-			'parent_item_colon'  => __( 'Parent FAQ Topic:', 'ps' ),
-			'search_items'       => __( 'Search FAQ Topics', 'ps' ),
-			'singular_name'      => _x( 'FAQ Topic', 'post type singular name', 'ps' ),
-			'view_item'          => __( 'View FAQ Topic', 'ps' ),
+		// Project post type
+		$projects_labels = array(
+			'add_new'            => _x( 'Add New', 'project', 'ps' ),
+			'add_new_item'       => __( 'Add New Project', 'ps' ),
+			'all_items'          => __( 'All Projects', 'ps' ),
+			'edit_item'          => __( 'Edit Project', 'ps' ),
+			'menu_name'          => _x( 'Projects', 'admin menu', 'ps' ),
+			'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'ps' ),
+			'name'               => _x( 'Projects', 'post type general name', 'ps' ),
+			'new_item'           => __( 'New Project', 'ps' ),
+			'not_found'          => __( 'No Projects found.', 'ps' ),
+			'not_found_in_trash' => __( 'No Projects found in Trash.', 'ps' ),
+			'parent_item_colon'  => __( 'Parent Project:', 'ps' ),
+			'search_items'       => __( 'Search Projects', 'ps' ),
+			'singular_name'      => _x( 'Project', 'post type singular name', 'ps' ),
+			'view_item'          => __( 'View Project', 'ps' ),
 		);
 
-		$faqs_args = array(
+		$projects_args = array(
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
-			'labels'             => $faqs_labels,
+			'labels'             => $projects_labels,
 			'menu_icon'          => 'dashicons-admin-users',
 			'menu_position'      => null,
 			'public'             => true,
 			'publicly_queryable' => true,
 			'query_var'          => true,
 			'rewrite'            => array(
-				'slug' => 'faqs',
+				'slug' => 'projects',
 			),
 			'show_ui'            => true,
 			'show_in_menu'       => true,
@@ -142,7 +142,7 @@ class kellee_Admin {
 			),
 		);
 
-		register_post_type( 'faqs', $faqs_args );
+		register_post_type( 'projects', $projects_args );
 	}
 	/**
 	 * Register settings notices for display
