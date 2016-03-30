@@ -128,6 +128,8 @@ function _kellee_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_kellee_scripts' );
 
+show_admin_bar( false );
+
 /**
  * CMB2 plugin
  */
