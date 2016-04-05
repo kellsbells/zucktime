@@ -1,3 +1,16 @@
 //--------------------------------------------------------------
 // Structure and High-Level Elements
 //--------------------------------------------------------------
+
+section {
+	@include clearfix;
+	background-color: $white;
+	display: block;
+	width: 100%;
+}
+
+.container {
+	@include clearfix;
+	max-width: 600px;
+	margin: 0 auto;
+}

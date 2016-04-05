@@ -17,8 +17,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,700|Cookie' rel='stylesheet' type='text/css'>
 
-<?php wp_head(); ?>
+<?php 
+wp_head();
+$imagedir = get_stylesheet_directory_uri() . "/assets/img";
+?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -27,14 +31,16 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="container">
+				<div class="site-logo">
+					<a href="/#hero"><img src="<?php echo $imagedir ?>/kelleelogo2016.png"></a>
+				</div>
+				<div class="site-nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</div>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
