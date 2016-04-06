@@ -8,15 +8,6 @@
 $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 get_header();
 
-// /* Retrieve all posts of type project */
-// $project_args = array(
-// 	'posts_per_page'   => -1,
-// 	'orderby'          => 'title',
-// 	'order'            => 'ASC',
-// 	'post_type'        => 'projects'
-// );
-// $projects = get_posts( $project_args );
-
 ?>
 
 <div class="home">

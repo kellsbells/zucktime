@@ -14,16 +14,36 @@ header {
 	z-index: 1;
 
 	.site-logo {
-		@include span (3 of 12);
 		@include clearfix;
+		@include span (12 of 12);
+		text-align: center;
+
+		@include breakpoint ($break-medium) {
+			@include span (4 of 12);
+		}
+
+		@include breakpoint ($break-large) {
+			@include span (3 of 12);
+		}
 
 		img {
-			padding-top: 3px;
+			padding: 5px;
+			box-sizing: border-box;
+			max-width: 140px;
+			margin: 0 auto;
 		}
 	}
 
 	.site-nav {
-		@include span (last 6);
+		@include span (12 of 12);
+
+		@include breakpoint ($break-medium) {
+			@include span (last 8);
+		}
+
+		@include breakpoint ($break-large) {
+			@include span (last 6);
+		}
 	}
 
 	ul {

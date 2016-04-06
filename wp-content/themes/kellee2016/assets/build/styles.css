@@ -435,13 +435,19 @@ section {
     clear: both; }
 
 .container {
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto; }
   .container:before, .container:after {
     content: '';
     display: table; }
   .container:after {
     clear: both; }
+  @media (min-width: 720px) {
+    .container {
+      max-width: 450px; } }
+  @media (min-width: 960px) {
+    .container {
+      max-width: 600px; } }
 
 body,
 button {
@@ -508,19 +514,44 @@ header {
   box-shadow: 0px 2px 20px -10px rgba(0, 0, 0, 0.75);
   z-index: 1; }
   header .site-logo {
-    width: 25%;
-    float: left; }
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; }
     header .site-logo:before, header .site-logo:after {
       content: '';
       display: table; }
     header .site-logo:after {
       clear: both; }
+    @media (min-width: 720px) {
+      header .site-logo {
+        width: 33.33333%;
+        float: left; } }
+    @media (min-width: 960px) {
+      header .site-logo {
+        width: 25%;
+        float: left; } }
     header .site-logo img {
-      padding-top: 3px; }
+      padding: 5px;
+      box-sizing: border-box;
+      max-width: 140px;
+      margin: 0 auto; }
   header .site-nav {
-    width: 50%;
-    float: right;
+    width: 100%;
+    float: left;
+    margin-left: 0;
     margin-right: 0; }
+    @media (min-width: 720px) {
+      header .site-nav {
+        width: 66.66667%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 960px) {
+      header .site-nav {
+        width: 50%;
+        float: right;
+        margin-right: 0; } }
   header ul {
     display: block;
     text-align: justify;
@@ -652,12 +683,16 @@ form .button {
   moz-background-size: cover;
   background-size: cover;
   min-height: 100vh;
-  padding: 40px 0; }
+  padding: 90px 0; }
+  @media (min-width: 960px) {
+    .about {
+      padding: 60px 0; } }
   .about h2 {
     font-family: "Cookie", cursive;
     font-size: 50px;
     font-size: 5rem;
-    text-align: center; }
+    text-align: center;
+    line-height: 1; }
   .about .imagetext .image {
     float: left;
     width: 39%;
@@ -672,8 +707,11 @@ form .button {
   webkit-background-size: cover;
   moz-background-size: cover;
   background-size: cover;
-  padding: 40px 0;
-  color: #FFF; }
+  color: #FFF;
+  padding: 90px 0; }
+  @media (min-width: 960px) {
+    .tech {
+      padding: 60px 0; } }
   .tech h2 {
     font-size: 50px;
     font-size: 5rem;
@@ -687,19 +725,22 @@ form .button {
   moz-background-size: cover;
   background-size: cover;
   min-height: 100vh;
-  padding: 40px 0; }
+  padding: 90px 0; }
   .portfolio:before, .portfolio:after {
     content: '';
     display: table; }
   .portfolio:after {
     clear: both; }
+  @media (min-width: 960px) {
+    .portfolio {
+      padding: 60px 0; } }
   .portfolio h2 {
     font-family: "Cookie", cursive;
     text-align: center;
     font-size: 50px;
     font-size: 5rem;
     margin: 0;
-    line-height: 1; }
+    line-height: 1.2; }
   .portfolio p {
     font-family: "Poppins", sans-serif;
     text-align: center;

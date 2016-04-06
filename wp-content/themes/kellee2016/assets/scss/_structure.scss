@@ -11,6 +11,14 @@ section {
 
 .container {
 	@include clearfix;
-	max-width: 600px;
+	max-width: 300px;
 	margin: 0 auto;
+
+	@include breakpoint ($break-medium) {
+		max-width: 450px;
+	}
+
+	@include breakpoint ($break-large) {
+		max-width: 600px;
+	}
 }
