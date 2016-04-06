@@ -26,6 +26,29 @@ get_header();
 			<div class="container">
 				<h1>Kellee Martins</h1>
 				<h2>Web Developer</h2>
+				<div class="social-icons">
+					<a href="https://github.com/kellsbells" target="_blank"> 
+						<img src="<?php echo $imagedir ?>/icons/github.png">
+					</a>
+					<a href="http://instagram.com/kelleebutton/" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/instagram.png">
+					</a>
+					<a href="https://www.linkedin.com/in/kelleemartins" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/linkedin.png">
+					</a>
+					<a href="https://twitter.com/kelleebutton" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/twitter.png">
+					</a>
+					<a href="https://www.facebook.com/kelleedawn" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/facebook.png">
+					</a>
+					<a href="https://www.pinterest.com/kelleemartins/" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/pinterest.png">
+					</a>
+					<a href="https://plus.google.com/u/0/114655936823227127569" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/google-plus.png">
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -87,7 +110,7 @@ get_header();
 					  	$projects_query = new WP_Query( $project_args );
 					  	while ( $projects_query->have_posts() ): $projects_query->the_post();
 					?>
-						<a href="<?php echo the_permalink(); ?>" class="grid-item"><img src="<?php the_post_thumbnail(); ?>"></a>
+						<a href="<?php echo the_permalink(); ?>" class="grid-item"><?php the_post_thumbnail(); ?></a>
 					<?php endwhile; ?>
 				</div>	
 			</div>

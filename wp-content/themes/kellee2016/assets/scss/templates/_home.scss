@@ -18,13 +18,31 @@
     	font-family: $font-primary;
     	font-size: 100px;
     	font-size: 10rem;
-    	line-height: 1;
+    	line-height: .9;
     	text-shadow: 0 0 10px $black, 0 0 10px $white;
     }
 
     h2 {
     	font-family: $font-secondary;
-    	text-shadow: 0 0 10px $black, 0 0 10px $white;
+    	text-shadow: 0 0 6px $black, 0 0 6px $white;
+        padding-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5px;
+        
+
+        img {
+            max-width: 30px;
+            max-height: 30px;
+            border-radius: 100%;
+            padding: 2px;
+            opacity: .9;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        }
     }
 }
 

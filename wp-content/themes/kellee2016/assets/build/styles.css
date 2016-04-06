@@ -627,11 +627,24 @@ form .button {
     font-family: "Cookie", cursive;
     font-size: 100px;
     font-size: 10rem;
-    line-height: 1;
+    line-height: .9;
     text-shadow: 0 0 10px #000, 0 0 10px #FFF; }
   .hero h2 {
     font-family: "Poppins", sans-serif;
-    text-shadow: 0 0 10px #000, 0 0 10px #FFF; }
+    text-shadow: 0 0 6px #000, 0 0 6px #FFF;
+    padding-bottom: 20px; }
+  .hero a {
+    text-decoration: none;
+    padding: 5px; }
+    .hero a img {
+      max-width: 30px;
+      max-height: 30px;
+      border-radius: 100%;
+      padding: 2px;
+      opacity: .9;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+      moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
 
 .about {
   background-color: #FFF;
