@@ -18,7 +18,7 @@ $space: 20px;
 
 $white: #FFF;
 $black: #000;
-$color-primary: $black; 
+$color-brand: #88BEC4; 
 
 
 
@@ -29,6 +29,9 @@ $color-primary: $black;
 // -----
 
 $font-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-primary: 'Cookie', cursive;
+$font-secondary: 'Poppins', sans-serif;
 
 
 
@@ -55,7 +58,7 @@ $max-width: 1200px;
 $susy: (
 	columns: 12,
 	container: $max-width,
-	gutters: 1/2
+	gutters: 0,
 );
 
 
