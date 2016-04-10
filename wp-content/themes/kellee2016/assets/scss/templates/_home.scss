@@ -4,7 +4,7 @@
 
 
 .hero {
-	background: url(../img/hero1.jpg) no-repeat center center fixed; 
+	background: url(../img/hero1.jpg) no-repeat center center ; 
   	webkit-background-size: cover;
     moz-background-size: cover;
     -o-background-size: cover;
@@ -12,6 +12,14 @@
     min-height: 100vh;
     color: $white;
     text-align: center;
+
+    @include breakpoint ($break-small) {
+        background: url(../img/hero1.jpg) no-repeat center center fixed; 
+        webkit-background-size: cover;
+        moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     h1 {
     	padding-top: 35vh;
@@ -191,12 +199,20 @@
 }
 
 .contact {
-	background: url(../img/hero1.jpg) no-repeat center center fixed;
+	background: url(../img/hero1.jpg) no-repeat center center;
 	webkit-background-size: cover;
     moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 100vh;
+
+    @include breakpoint ($break-small) {
+        background: url(../img/hero1.jpg) no-repeat center center fixed; 
+        webkit-background-size: cover;
+        moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     h2 {
     	font-family: $font-primary;

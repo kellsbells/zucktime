@@ -648,13 +648,19 @@ form .button {
   box-shadow: 0px 2px 20px -10px rgba(0, 0, 0, 0.75); }
 
 .hero {
-  background: url(../img/hero1.jpg) no-repeat center center fixed;
+  background: url(../img/hero1.jpg) no-repeat center center;
   webkit-background-size: cover;
   moz-background-size: cover;
   background-size: cover;
   min-height: 100vh;
   color: #FFF;
   text-align: center; }
+  @media (min-width: 480px) {
+    .hero {
+      background: url(../img/hero1.jpg) no-repeat center center fixed;
+      webkit-background-size: cover;
+      moz-background-size: cover;
+      background-size: cover; } }
   .hero h1 {
     padding-top: 35vh;
     font-family: "Cookie", cursive;
@@ -795,11 +801,17 @@ form .button {
     box-sizing: border-box; }
 
 .contact {
-  background: url(../img/hero1.jpg) no-repeat center center fixed;
+  background: url(../img/hero1.jpg) no-repeat center center;
   webkit-background-size: cover;
   moz-background-size: cover;
   background-size: cover;
   min-height: 100vh; }
+  @media (min-width: 480px) {
+    .contact {
+      background: url(../img/hero1.jpg) no-repeat center center fixed;
+      webkit-background-size: cover;
+      moz-background-size: cover;
+      background-size: cover; } }
   .contact h2 {
     font-family: "Cookie", cursive;
     font-size: 50px;
