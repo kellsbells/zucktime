@@ -102,6 +102,45 @@
     	text-shadow: 0 0 10px $black, 0 0 10px $white;
     	text-align: center;
     	font-family: $font-primary;
+        padding-bottom: 40px;
+        line-height: 1;
+    }
+
+    .icon-container {
+        text-align: center;
+
+        img {
+            padding: 10px;
+            box-sizing: border-box;
+            max-height: 75px;
+        }
+    }
+
+    .cta-buttons {
+        @include clearfix;
+        padding-top: 60px;
+    }
+
+    .button {
+        @include span (5 of 12);
+        background-color: $white;
+        color: $color-brand;
+        margin: 0 4%;  
+    }
+
+    .work-history {
+        display: none;
+        padding-top: 60px;
+        text-align: center;
+
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            padding-top: 10px;
+        }
     }
 }
 

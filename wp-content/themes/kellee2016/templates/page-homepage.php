@@ -71,10 +71,49 @@ get_header();
 	<section>
 		<div id="tech" class="tech">
 			<div class="container">
-				<h2>My Toolbelt</h2>
+				<h2>What I Know and What I've Done</h2>
 				<div class="icon-container">
-					<img src="<?php echo $imagedir ?>/icons/css3.png">
 					<img src="<?php echo $imagedir ?>/icons/html5.png">
+					<img src="<?php echo $imagedir ?>/icons/css3.png">
+					<img src="<?php echo $imagedir ?>/icons/javascript.png">
+					<img src="<?php echo $imagedir ?>/icons/jquery.png">
+					<img src="<?php echo $imagedir ?>/icons/angular.png">
+					<img src="<?php echo $imagedir ?>/icons/wordpress.png">
+					<img src="<?php echo $imagedir ?>/icons/php.png">
+					<img src="<?php echo $imagedir ?>/icons/git.png">
+					<img src="<?php echo $imagedir ?>/icons/sass.png">
+					<img src="<?php echo $imagedir ?>/icons/susy.png">
+					<img src="<?php echo $imagedir ?>/icons/gulp.png">
+					<img src="<?php echo $imagedir ?>/icons/shopify.png">
+					<img src="<?php echo $imagedir ?>/icons/photoshop.png">
+					<img src="<?php echo $imagedir ?>/icons/bootstrap.png">
+				</div>
+				<div class="cta-buttons">
+					<button class="button js-toggle-work">View Work History</button>
+					<a href="#" class="button">Download Resume</a>
+				</div>	
+				<div class="work-history">
+					<div class="job">
+						<h3>Voltage Advertising: Web Developer</h3>
+						<p>Senior: Randy Lybbert (706) 994-8262</p>
+						<p>Former Senior: Craig Freeman (619) 559-2580</p>
+					</div>
+					<div class="job">
+						<h3>Eli Kirk/Novell: HTML Web Developer</h3>
+						<p>Supervisor: Jarid Love (801) 377-9321</p>
+					</div>
+					<div class="job">
+						<h3>Heritage Makers: Supervising Customer Support Agent</h3>
+						<p>Supervisor: Suzy Berg (801) 437-8000</p>
+					</div>
+					<div class="job">
+						<h3>Brigham Young University: Lead Student Custodian</h3>
+						<p>Supervisor: Thom Rudd (801) 602-5507</p>
+					</div>
+					<div class="job">
+						<h3>Brock Cabinets Inc.: Assistant to GM</h3>
+						<p>Supervisor: Nephi Brock (910) 424-1776</p>
+					</div>
 				</div>
 			</div>
 		</div>

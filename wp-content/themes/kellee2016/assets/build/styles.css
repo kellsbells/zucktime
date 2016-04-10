@@ -422,7 +422,9 @@ table {
   background-color: #88BEC4;
   color: #FFF;
   font-family: "Poppins", sans-serif;
-  padding: 5px; }
+  padding: 5px;
+  text-align: center;
+  text-decoration: none; }
 
 section {
   background-color: #FFF;
@@ -717,7 +719,37 @@ form .button {
     font-size: 5rem;
     text-shadow: 0 0 10px #000, 0 0 10px #FFF;
     text-align: center;
-    font-family: "Cookie", cursive; }
+    font-family: "Cookie", cursive;
+    padding-bottom: 40px;
+    line-height: 1; }
+  .tech .icon-container {
+    text-align: center; }
+    .tech .icon-container img {
+      padding: 10px;
+      box-sizing: border-box;
+      max-height: 75px; }
+  .tech .cta-buttons {
+    padding-top: 60px; }
+    .tech .cta-buttons:before, .tech .cta-buttons:after {
+      content: '';
+      display: table; }
+    .tech .cta-buttons:after {
+      clear: both; }
+  .tech .button {
+    width: 41.66667%;
+    float: left;
+    background-color: #FFF;
+    color: #88BEC4;
+    margin: 0 4%; }
+  .tech .work-history {
+    display: none;
+    padding-top: 60px;
+    text-align: center; }
+    .tech .work-history h3,
+    .tech .work-history p {
+      margin: 0; }
+    .tech .work-history h3 {
+      padding-top: 10px; }
 
 .portfolio {
   background-color: #FFF;
