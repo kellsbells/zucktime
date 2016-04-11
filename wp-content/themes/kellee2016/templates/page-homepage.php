@@ -5,7 +5,19 @@
  * @package kellee
  */
 
+$custom_meta = get_post_meta( get_the_ID() );
 $imagedir = get_stylesheet_directory_uri() . "/assets/img";
+
+
+function get_safe_meta( $key ) {
+	global $custom_meta;
+	return ( isset( $custom_meta[ $key ] ) && isset( $custom_meta[ $key ][0] ))
+	? $custom_meta[ $key ][0]
+	: "";
+}
+
+$form = get_safe_meta( '_kellee_form' );
+
 get_header();
 
 ?>
@@ -94,25 +106,25 @@ get_header();
 				</div>	
 				<div class="work-history">
 					<div class="job">
-						<h3>Voltage Advertising: Web Developer</h3>
-						<p>Senior: Randy Lybbert (706) 994-8262</p>
-						<p>Former Senior: Craig Freeman (619) 559-2580</p>
+						<h3><a href="http://voltagead.com/">Voltage Advertising</a>: Web Developer</h3>
+						<p>Senior: Randy Lybbert <a href="tel:7069948262">(706) 994-8262</a></p>
+						<p>Former Senior: Craig Freeman <a href="tel:6195592580">(619) 559-2580</a></p>
 					</div>
 					<div class="job">
-						<h3>Eli Kirk/Novell: HTML Web Developer</h3>
-						<p>Supervisor: Jarid Love (801) 377-9321</p>
+						<h3><a href="http://ekragency.com/">Eli Kirk</a>/Novell: HTML Web Developer</h3>
+						<p>Supervisor: Jarid Love <a href="tel:8013779321">(801) 377-9321</a></p>
 					</div>
 					<div class="job">
-						<h3>Heritage Makers: Supervising Customer Support Agent</h3>
-						<p>Supervisor: Suzy Berg (801) 437-8000</p>
+						<h3><a href="http://heritagemakers.com/">Heritage Makers</a>: Supervising Customer Support Agent</h3>
+						<p>Supervisor: Suzy Berg <a href="tel:8014378000">(801) 437-8000</a></p>
 					</div>
 					<div class="job">
-						<h3>Brigham Young University: Lead Student Custodian</h3>
-						<p>Supervisor: Thom Rudd (801) 602-5507</p>
+						<h3><a href="http://home.byu.edu/home/">Brigham Young University</a>: Lead Student Custodian</h3>
+						<p>Supervisor: Thom Rudd <a href="tel:8016025507">(801) 602-5507</a></p>
 					</div>
 					<div class="job">
-						<h3>Brock Cabinets Inc.: Assistant to GM</h3>
-						<p>Supervisor: Nephi Brock (910) 424-1776</p>
+						<h3><a href="http://www.brockcabinets.com/">Brock Cabinets Inc.</a>: Assistant to GM</h3>
+						<p>Supervisor: Nephi Brock <a href="tel:9104241776">(910) 424-1776</a></p>
 					</div>
 				</div>
 			</div>
@@ -147,12 +159,16 @@ get_header();
 		<div id="contact" class="contact">
 			<div class="container">
 				<h2>Contact Me</h2>
-				<form>
+				<!-- <form>
 					<input placeholder="Name"></input>
 					<input placeholder="Email"></input>
 					<textarea rows="5" class="message" placeholder="Message"></textarea>
 					<button type="submit" class="button">Say Hi!</button>
-				</form>
+				</form> -->
+
+				<?php if ( isset( $form ) && ! empty( $form ) ): ?>
+					<?php echo $form; ?>
+				<?php endif; ?>	
 			</div>
 		</div>
 	</section>

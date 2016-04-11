@@ -13,7 +13,7 @@
     color: $white;
     text-align: center;
 
-    @include breakpoint ($break-small) {
+    @include breakpoint ($break-medium) {
         background: url(../img/hero1.jpg) no-repeat center center fixed; 
         webkit-background-size: cover;
         moz-background-size: cover;
@@ -46,7 +46,6 @@
             max-height: 30px;
             border-radius: 100%;
             padding: 2px;
-            opacity: .9;
             -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
             moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
@@ -206,7 +205,7 @@
     background-size: cover;
     min-height: 100vh;
 
-    @include breakpoint ($break-small) {
+    @include breakpoint ($break-medium) {
         background: url(../img/hero1.jpg) no-repeat center center fixed; 
         webkit-background-size: cover;
         moz-background-size: cover;
