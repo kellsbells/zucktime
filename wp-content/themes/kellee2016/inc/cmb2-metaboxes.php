@@ -45,7 +45,7 @@ class kellee_cmb2_metaboxes {
 		$kellee_home_box->add_field( array(
 			'name'       => __( 'Form', 'kellee' ),
 			'id'         => self::$prefix . 'form',
-			'type'       => 'text',
+			'type'       => 'wysiwyg',
 		) );
 	}
 }

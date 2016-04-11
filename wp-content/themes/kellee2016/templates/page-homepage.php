@@ -102,7 +102,7 @@ get_header();
 				</div>
 				<div class="cta-buttons">
 					<button class="button js-toggle-work">View Work History</button>
-					<a href="#" class="button">Download Resume</a>
+					<a href="<?php echo $imagedir ?>/Kellee-Martins-Resume.pdf" download class="button">Download Resume</a>
 				</div>	
 				<div class="work-history">
 					<div class="job">
@@ -159,16 +159,9 @@ get_header();
 		<div id="contact" class="contact">
 			<div class="container">
 				<h2>Contact Me</h2>
-				<!-- <form>
-					<input placeholder="Name"></input>
-					<input placeholder="Email"></input>
-					<textarea rows="5" class="message" placeholder="Message"></textarea>
-					<button type="submit" class="button">Say Hi!</button>
-				</form> -->
-
-				<?php if ( isset( $form ) && ! empty( $form ) ): ?>
-					<?php echo $form; ?>
-				<?php endif; ?>	
+				<?php if ( isset( $form ) && ! empty( $form ) ):
+					echo do_shortcode( $form );
+				endif; ?>	
 			</div>
 		</div>
 	</section>
