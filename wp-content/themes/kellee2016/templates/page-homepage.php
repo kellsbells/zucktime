@@ -108,7 +108,7 @@ get_header();
 					<div class="job">
 						<h3><a href="http://voltagead.com/">Voltage Advertising</a>: Web Developer</h3>
 						<p>Senior: Randy Lybbert <a href="tel:7069948262">(706) 994-8262</a></p>
-						<p>Former Senior: Craig Freeman <a href="tel:6195592580">(619) 559-2580</a></p>
+						<p>Mentor & Former Senior: Craig Freeman <a href="tel:6195592580">(619) 559-2580</a></p>
 					</div>
 					<div class="job">
 						<h3><a href="http://ekragency.com/">Eli Kirk</a>/Novell: HTML Web Developer</h3>
