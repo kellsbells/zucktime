@@ -7,15 +7,39 @@
  * @package _s
  */
 
+$imagedir = get_stylesheet_directory_uri() . "/assets/img";
+
 ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+			<div class="container">
+				<div class="social-icons">
+					<a href="https://github.com/kellsbells" target="_blank"> 
+						<img src="<?php echo $imagedir ?>/icons/github.png">
+					</a>
+					<a href="http://instagram.com/kelleebutton/" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/instagram.png">
+					</a>
+					<a href="https://www.linkedin.com/in/kelleemartins" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/linkedin.png">
+					</a>
+					<a href="https://twitter.com/kelleebutton" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/twitter.png">
+					</a>
+					<a href="https://www.facebook.com/kelleedawn" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/facebook.png">
+					</a>
+					<a href="https://www.pinterest.com/kelleemartins/" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/pinterest.png">
+					</a>
+					<a href="https://plus.google.com/u/0/114655936823227127569" target="_blank">
+						<img src="<?php echo $imagedir ?>/icons/google-plus.png">
+					</a>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

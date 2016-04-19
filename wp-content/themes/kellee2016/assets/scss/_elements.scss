@@ -78,3 +78,18 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+.button {
+	border: 0;
+    background-color: $color-brand;
+    color: $white;
+    font-family: $font-secondary;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+    	background-color: $color-brand-secondary;
+    	transition: all 0.5s ease;
+    }
+}

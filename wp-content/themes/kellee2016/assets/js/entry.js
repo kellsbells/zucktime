@@ -2,26 +2,27 @@
 var $ = require('jquery');
 
 // Fire it up
-var Site = {
+var Kellee = {
 	challengeElement: null,
 	context: null,
 
 	/**
-	 * Initialize site
+	 * Initialize Kellee
 	 */
 	init: function() {
 		/**
 		 * Set the initial breakpoint context
 		 */
-		Site.challengeElement = document.querySelector('.breakpoint-context');
-		Site.challengeContext();
+		Kellee.challengeElement = document.querySelector('.breakpoint-context');
+		Kellee.challengeContext();
+		Kellee.smoothScroll();
 
 		/**
 		 * Check breakpoint context on window resizing
 		 * Throttled/debounced for better performance
 		 */
-		$(window).resize(Site.debounce(function() {
-			Site.challengeContext();
+		$(window).resize(Kellee.debounce(function() {
+			Kellee.challengeContext();
 		}, 250));
 	},
 
@@ -31,14 +32,14 @@ var Site = {
 	 * Modified from http://davidwalsh.name/device-state-detection-css-media-queries-javascript
 	 */
 	challengeContext: function() {
-		var styles = window.getComputedStyle(Site.challengeElement),
+		var styles = window.getComputedStyle(Kellee.challengeElement),
 			index = parseInt(styles.getPropertyValue('z-index'), 10),
 			states = {
 				1: 'mobile',
 				2: 'tablet'
 			};
 
-		Site.context = states[index] || 'desktop';
+		Kellee.context = states[index] || 'desktop';
 	},
 
 	/**
@@ -58,10 +59,31 @@ var Site = {
 				fn.apply(context, args);
 			}, delay);
 		};
+	},
+
+	smoothScroll: function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      	var target = $(this.hash);
+		      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      	if (target.length) {
+		      	  	$('html, body').animate({
+		      	  	  scrollTop: target.offset().top
+		      	  	}, 1000);
+		      	  	return false;
+		      	}
+		    }
+		});
+	},
+
+	toggleWorkHistory: function() {
+		$( '.work-history' ).slideToggle();
 	}
 };
 
 $(document).ready(function() {
-	Site.init();
+	Kellee.init();
+}).on('click', '.js-toggle-work', function() {
+	Kellee.toggleWorkHistory();
 });
 // Chain any click events here
