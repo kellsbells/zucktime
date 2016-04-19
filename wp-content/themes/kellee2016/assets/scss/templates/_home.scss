@@ -87,6 +87,16 @@
     		text-align: justify;
     	}
     }
+
+    a {
+        color: $color-brand;
+        transition: all 0.5s ease;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-brand-secondary;
+        }
+    }
 }
 
 
@@ -133,6 +143,12 @@
         background-color: $white;
         color: $color-brand;
         margin: 0 4%;  
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $color-brand-secondary;
+            color: $white;
+        }
     }
 
     .work-history {
@@ -147,6 +163,16 @@
 
         h3 {
             padding-top: 10px;
+        }
+
+        a {
+            color: $white;
+            transition: all 0.5s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-brand-secondary;
+            }
         }
     }
 }

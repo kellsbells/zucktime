@@ -425,6 +425,9 @@ table {
   padding: 5px;
   text-align: center;
   text-decoration: none; }
+  .button:hover {
+    background-color: #A9A9A9;
+    transition: all 0.5s ease; }
 
 section {
   background-color: #FFF;
@@ -657,6 +660,9 @@ form {
     text-align: center;
     text-decoration: none;
     border-radius: 0; }
+    form input[type="submit"]:hover {
+      background-color: #A9A9A9;
+      transition: all 0.5s ease; }
   form .wpcf7-response-output {
     background-color: #FFF;
     color: #88BEC4;
@@ -723,6 +729,12 @@ form {
     font-size: 12px;
     font-size: 1.2rem;
     text-align: justify; }
+  .about a {
+    color: #88BEC4;
+    transition: all 0.5s ease;
+    text-decoration: none; }
+    .about a:hover {
+      color: #A9A9A9; }
 
 .tech {
   background-color: #88BEC4;
@@ -760,7 +772,11 @@ form {
     float: left;
     background-color: #FFF;
     color: #88BEC4;
-    margin: 0 4%; }
+    margin: 0 4%;
+    transition: all 0.5s ease; }
+    .tech .button:hover {
+      background-color: #A9A9A9;
+      color: #FFF; }
   .tech .work-history {
     display: none;
     padding-top: 60px;
@@ -770,6 +786,12 @@ form {
       margin: 0; }
     .tech .work-history h3 {
       padding-top: 10px; }
+    .tech .work-history a {
+      color: #FFF;
+      transition: all 0.5s ease;
+      text-decoration: none; }
+      .tech .work-history a:hover {
+        color: #A9A9A9; }
 
 .portfolio {
   background-color: #FFF;
