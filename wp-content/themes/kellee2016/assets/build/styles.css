@@ -672,7 +672,10 @@ form {
 .code-snippet {
   background-color: #000;
   border-radius: 5px;
-  color: #00ff00; }
+  color: #00ff00;
+  padding: 10px; }
+  .code-snippet p {
+    margin: 0; }
 
 .hero {
   background: url(../img/hero1.jpg) no-repeat center center;
