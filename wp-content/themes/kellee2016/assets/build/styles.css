@@ -353,6 +353,7 @@ td,
 th {
   padding: 0; }
 
+/*Lime Green*/
 html {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -667,6 +668,10 @@ form {
     background-color: #FFF;
     color: #88BEC4;
     margin: 0 0.5em 3em; }
+
+.code-snippet {
+  background-color: #000;
+  border-radius: 5px; }
 
 .hero {
   background: url(../img/hero1.jpg) no-repeat center center;
