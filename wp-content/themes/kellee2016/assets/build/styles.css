@@ -671,7 +671,8 @@ form {
 
 .code-snippet {
   background-color: #000;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: #00ff00; }
 
 .hero {
   background: url(../img/hero1.jpg) no-repeat center center;
