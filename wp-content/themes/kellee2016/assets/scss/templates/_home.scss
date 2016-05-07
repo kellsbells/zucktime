@@ -126,6 +126,11 @@
             padding: 10px;
             box-sizing: border-box;
             max-height: 75px;
+            opacity: .85;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
@@ -250,6 +255,11 @@
 
     @include breakpoint ($break-medium) {
         padding-top: 51px; 
+    }
+
+    h1 {
+        padding: 30px 0;
+        text-align: center;
     }
 }
 

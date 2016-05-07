@@ -766,7 +766,10 @@ form {
     .tech .icon-container img {
       padding: 10px;
       box-sizing: border-box;
-      max-height: 75px; }
+      max-height: 75px;
+      opacity: .85; }
+      .tech .icon-container img:hover {
+        opacity: 1; }
   .tech .cta-buttons {
     padding-top: 60px; }
     .tech .cta-buttons:before, .tech .cta-buttons:after {
@@ -868,6 +871,9 @@ form {
   @media (min-width: 720px) {
     .single-project {
       padding-top: 51px; } }
+  .single-project h1 {
+    padding: 30px 0;
+    text-align: center; }
 
 .about-page {
   padding: 87px 0 40px 0; }
