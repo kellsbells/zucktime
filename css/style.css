@@ -7573,66 +7573,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-hero {
-  float: left;
-  width: 100%;
   position: relative;
-  height: 550px;
-  z-index: 10;
-  background: #4fd2c2;
-  overflow: hidden;  
 }
 
-
-@media screen and (max-width: 1200px) {
-  #fh5co-hero {
-    height: 473px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  #fh5co-hero {
-    height: 770px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-hero {
-    height: 700px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #fh5co-hero {
-    height: 660px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  #fh5co-hero {
-    height: 670px;
-  }
-}
-
-
-@media screen and (max-width: 545px) {
-  #fh5co-hero {
-    height: 600px;
-  }
-}
-
-
-@media screen and (max-width: 425px) {
-  #fh5co-hero {
-    height: 530px;
-  }
-}
 
 #fh5co-hero .fh5co-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+  width: 100%;
   z-index: 9;
   background: #3b3d40;
   opacity: .5;
@@ -7653,16 +7603,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-hero .fh5co-intro .fh5co-intro-img {
   text-align: right;
-  position: absolute;
+  position: relative;
   bottom: 0;
   text-align: center;
-}
-
-@media screen and (min-width: 992px) {
-  #fh5co-hero .fh5co-intro .fh5co-intro-img {
-    position: relative;
-    bottom: -125px;
-  }
+  overflow: hidden;
 }
 
 #fh5co-hero .fh5co-intro .fh5co-intro-img img{
@@ -7676,15 +7620,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 #fh5co-hero .fh5co-intro .fh5co-text {
-  bottom: -9em;
-}
-
-@media screen and (max-width: 1200px) {
-  #fh5co-hero .fh5co-intro .fh5co-text {
-    bottom: -7em;
-  }
+    position: relative;
+    margin-top: 20%;
 }
 
 @media screen and (max-width: 991px) {
@@ -7698,13 +7636,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
   padding-top: 20px;
   font-size: 30px;
-}
-
-@media screen and (max-width: 992px) {
-  #fh5co-hero .fh5co-intro .fh5co-text {
-    bottom: 0;
-    bottom: -6em;
-  }
 }
 
 #fh5co-hero .fh5co-intro h2 {
